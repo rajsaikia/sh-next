@@ -25,7 +25,7 @@ const ContactPage = () => {
           </thead>
           <tbody className="text-gray-700">
             {contacts.map((contact) => (
-              <tr key={contact.id} className="border-b border-gray-200 hover:bg-gray-100">
+              <tr key={contact.id} className="border-b border-gray-200 hover:bg-ray-100">
                 <td className="py-3 px-6">{contact.name}</td>
                 <td className="py-3 px-6">{contact.number}</td>
                 <td className="py-3 px-6">{contact.blogName}</td>
@@ -33,6 +33,21 @@ const ContactPage = () => {
             ))}
           </tbody>
         </table>
+      </div>
+      {/* Add a comment form */}
+      <div className="mt-8">
+        <h2 className="text-2xl font-bold mb-4">Leave a Comment</h2>
+        <form>
+          <div className="mb-4">
+            <label htmlFor="name" className="block text-gray-700 font-bold mb-2">Name</label>
+            <input type="text" id="name" name="name" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+          </div>
+          <div className="mb-4">
+            <label htmlFor="comment" className="block text-gray-700 font-bold mb-2">Comment</label>
+            <textarea id="comment" name="comment" rows={4} className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+          </div>
+          <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Submit</button>
+        </form>
       </div>
     </div>)
   );
