@@ -1,0 +1,56 @@
+
+    .about-page {
+      background-color: #f7f7f7;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .about-header {
+      margin-bottom: 40px;
+    }
+
+    .about-title {
+      font-size: 36px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .about-subtitle {
+      font-size: 18px;
+      color: #666;
+    }
+
+    .about-features {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .feature-card {
+      background-color: #8a7e6e;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      flex: 1;
+      max-width: 300px;
+    }
+
+    .feature-number {
+      font-size: 72px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .feature-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+      margin-top: 20px;
+    }
+
+    .feature-description {
+      font-size: 16px;
+      color: #fff;
+      margin-top: 10px;
+    }
+    
