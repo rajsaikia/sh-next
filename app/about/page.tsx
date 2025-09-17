@@ -1,8 +1,13 @@
-export default function AboutPage() {
-  return (
-    <main className="p-4">
-      <h1 className="text-2xl font-bold">About Us</h1>
-      <p>This is the about page of my awesome blog.</p>
-    </main>
-  );
-}
+
+    import React from 'react';
+    import AboutPage from '../features/about/components/AboutPage';
+    import '../features/about/components/AboutPage.css';
+
+    const About = () => {
+      return (
+        <AboutPage />
+      );
+    };
+
+    export default About;
+    

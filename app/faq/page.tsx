@@ -1,8 +1,11 @@
-export default function FaqPage() {
+import React from 'react';
+import FaqPage from '../features/faq/components/FaqPage';
+import '../features/faq/components/FaqPage.css';
+
+const Faq = () => {
   return (
-    <main className="p-4">
-      <h1 className="text-2xl font-bold">FAQ</h1>
-      <p>This is the FAQ page of my awesome blog.</p>
-    </main>
+    <FaqPage />
   );
-}
+};
+
+export default Faq;
